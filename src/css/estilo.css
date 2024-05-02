@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background: black;
+    font-family: "Roboto", "sans family";
+}
+nav ul{
+    list-style: none;
+    position: relative; /* nao ficar em cima do nav quando  estiver pronto*/
+
+}
+nav ul li{
+    width: 150px;
+    float: left
+}
+nav a{
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none; /* tira as linhas embaixo do texto */
+    display: flex;
+    justify-content: center; 
+    color: aqua;
+    background: #000;
+}
+
+nav ul ul{
+    position: absolute; /* fica tudo em cima */
+    visibility: hidden;
+}
+
+nav ul li:hover ul{ /* faz que quando voce coloca o mouse em cima aparece outras paginas, aparitr do momento que o hover é chamado colocar ul depois porque chama as subdivisoes */
+
+    visibility: visible;
+
+}
+nav a:hover{ /* HOVER significa: quando voce passar em cima uma ação acontece --- quando passar mouse em cima do HOME, AULAS, TREINAMENTOS, etc sua cor ficara vermelha com texto branco */
+    background: crimson;
+    color:#ffff;
+
+}
+nav ul ul li{
+    float: none; /* colocando em linha */
+    border-bottom: 1px solid; /* fazendo linhas dentro da subdivisoes, dividindo cada uma delas */
+
+}
+nav ul ul li a{ 
+    background: purple; /* colocando cor roxa apenas nas subdivisoes */
+
+}
